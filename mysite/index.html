@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>豆瓣电影</title>
+    <link rel="stylesheet" href="css/douban.css">
+    <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+    <script src="douban.js" defer></script> 
+</head>
+<body>
+    <div id="db-globe-nav">
+        <div id="bd">
+            <div id="top-nav-info">
+                <a href="https://accounts.douban.com/passport/login?source=movie" class="nav-login" rel="nofollow">登录/注册</a>
+            </div>
+            <div id="top-nav-doubanapp">
+                <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+            </div>
+            <div id="globe">
+                <ul>
+                    <li><a href="#">豆瓣</a></li>
+                    <li><a href="#">读书</a></li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">音乐</a></li>
+                    <li><a href="#">同城</a></li>
+                    <li><a href="#">小组</a></li>
+                    <li><a href="#">阅读</a></li>
+                    <li><a href="#">FM</a></li>
+                    <li><a href="#">时间</a></li>
+                    <li><a href="#">豆品</a></li>
+                    <li><a href="#">更多</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="db-nav-movie clearfix">
+        <div class="nav-wrapper">
+            <div class="nav-primary clearfix">
+                <div class="nav-logo"> 
+                    <a href="https://movie.douban.com">豆瓣电影</a>
+                </div>
+                <div class="nav-search">
+                    <form action="#" method="get">
+                      <fieldset>
+                        <legend>搜索：</legend>
+                        <label for="inp-query"></label>
+                        <div class="inp">
+                            <input id="inp-query" type="text" name="search_text" size="22" maxlength="60" placeholder="搜索电影、电视剧、综艺、影人" value="">
+                        </div>
+                        <div class="inp-btn">
+                            <input type="submit" value="搜索">
+                        </div>                      
+                      </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="nav-secondery clearfix">
+            <div class="nav-items">
+                <ul>
+                    <li><a href="#">影讯&购票</a></li>
+                    <li><a href="#">选电影</a></li>
+                    <li><a href="#">电视剧</a></li>
+                    <li><a href="#">排行榜</a></li>
+                    <li><a href="#">分类</a></li>
+                    <li><a href="#">影评</a></li>
+                    <li><a href="#">2019年度榜单</a></li>
+                    <li><a href="#">2019书影音报告</a></li>
+                </ul>
+                <a href="#" class="movieannual"></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper clearfix">
+        <div class="content clearfix">
+            <div class="article">
+                <div class="article1 clearfix">
+                    <div class="article-nav">
+                        <h2>最近热门电影</h2>
+                        <ul>
+                            <li><a href="#">热门</a></li>
+                            <li><a href="#">最新</a></li>
+                            <li><a href="#">豆瓣高分</a></li>
+                            <li><a href="#">冷门佳片</a></li>
+                            <li><a href="#">华语</a></li>
+                            <li><a href="#">欧美</a></li>
+                            <li><a href="#">韩国</a></li>
+                            <li><a href="#">日本</a></li>
+                        </ul>
+                        <a href="#">更多»</a>
+                    </div>
+                    <div class="article-content">
+                        <a href="#">
+                            <div>
+                                <img src="images/p2592522995.jpg" alt="绅士们">
+                            </div>
+                            <p> 绅士们 <strong>8.3</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2566870171.jpg" alt="饥饿站台">
+                            </div>
+                            <p> 饥饿站台 <strong>7.8</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2597603729.jpg" alt="星星女孩">
+                            </div>
+                            <p>星星女孩 <strong>6.7</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2556765966.jpg" alt="标准之外">
+                            </div>
+                            <p>标准之外 <strong>8.4</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2583562073.jpg" alt="温蒂妮">
+                            </div>
+                            <p>温蒂妮 <strong>7.6</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2582428806.jpg" alt="隐形人">
+                            </div>
+                            <p>隐形人 <strong>7.3</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2585533507.jpg" alt="狩猎">
+                            </div>
+                            <p>狩猎 <strong>7.3</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2588279882.jpg" alt="从不，很少，有时，总是">
+                            </div>
+                            <p>从不，很少，有时，总是 <strong>7.6</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2575325937.jpg" alt="小妇人">
+                            </div>
+                            <p>小妇人 <strong>8.1</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2592521688.jpg" alt="悲惨世界">
+                            </div>
+                            <p>悲惨世界 <strong>8.2</strong></p>
+                        </a>
+                    </div>
+                    <div class="article-control">
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                    </div>
+                </div>
+                <div class="article2 clearfix">
+                    <div class="article-nav">
+                        <h2>最近热门电视剧</h2>
+                        <ul>
+                            <li><a href="#">热门</a></li>
+                            <li><a href="#">国产剧</a></li>
+                            <li><a href="#">综艺</a></li>
+                            <li><a href="#">美剧</a></li>
+                            <li><a href="#">日剧</a></li>
+                            <li><a href="#">韩剧</a></li>
+                            <li><a href="#">日本动画</a></li>
+                            <li><a href="#">纪录片</a></li>
+                        </ul>
+                        <a href="#">更多»</a>
+                    </div>
+                    <div class="article-content">
+                        <a href="#">
+                            <div>
+                                <img src="images/p2574916002.jpg" alt="我是余欢水">
+                            </div>
+                            <p> 我是余欢水 <strong>7.4</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2593664928.jpg" alt="龙岭迷窟">
+                            </div>
+                            <p> 龙岭迷窟 <strong>8.2</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2580092740.jpg" alt="反击 第八季">
+                            </div>
+                            <p>反击 第八季 <strong>8.1</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2592719778.jpg" alt="早点江湖">
+                            </div>
+                            <p>早点江湖 <strong>7.6</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2591672657.jpg" alt="女巫前线：塞勒姆要塞">
+                            </div>
+                            <p>女巫前线：塞勒姆要塞 <strong>6.6</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2593859919.jpg" alt="清平乐">
+                            </div>
+                            <p>清平乐 <strong>7.6</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2595491096.jpg" alt="猎狐">
+                            </div>
+                            <p>猎狐 <strong>7.8</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2586806575.jpg" alt="夫妻的世界">
+                            </div>
+                            <p>夫妻的世界 <strong>8.3</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2591919989.jpg" alt="鬓边不是海棠红">
+                            </div>
+                            <p>鬓边不是海棠红 <strong>7.7</strong></p>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/p2593033597.jpg" alt="杀死伊芙 第三季">
+                            </div>
+                            <p>杀死伊芙 第三季 <strong>9.1</strong></p>
+                        </a>
+                    </div>
+                    <div class="article-control">
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                    </div>
+                </div>
+                <div class="screen clearfix">
+                    <div class="article-nav">
+                        <h2>即将上映</h2>
+                        <a href="#">即将上映»</a>
+                        <a href="#">全部正在热映»</a>
+                    </div>
+                    <div class="screen-content">
+                        <div class="screen-box">
+                            <a href="#">
+                            <div>
+                                <img src="images/p2579398648.webp" alt="神秘访客">
+                            </div>
+                            </a>
+                            <a href="#">神秘访客</a>
+                            <p>06月25日上映</p>
+                        </div>
+                        <div class="screen-box">
+                            <a href="#">
+                            <div>
+                                <img src="images/p2564190636.webp" alt="金蝉降魔">
+                            </div>
+                            </a>
+                            <a href="#">金蝉降魔</a>
+                            <p>05月08日上映</p>
+                        </div>
+                        <div class="screen-box">
+                            <a href="#">
+                            <div>
+                                <img src="images/p2581346773.webp" alt="大红包">
+                            </div>
+                            </a>
+                            <a href="#">大红包</a>
+                            <p>04月30日上映</p>
+                        </div>
+                        <div class="screen-box">
+                            <a href="#">
+                            <div>
+                                <img src="images/p2522497098.webp" alt="六月的秘密">
+                            </div>
+                            </a>
+                            <a href="#">六月的秘密</a>
+                            <p>06月21日上映</p>
+                        </div>
+                        <div class="screen-box">
+                            <a href="#">
+                            <div>
+                                <img src="images/p2574800433.webp" alt="无名狂">
+                            </div>
+                            </a>
+                            <a href="#">无名狂</a>
+                            <p>06月25日上映</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-frames clearfix">
+                    <div class="gallery-hd">
+                        <div class="gallery-control">
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                        </div>
+                        <div class="gallery-slide">
+                            <p>1 / 7</p>
+                        </div>
+                        <h2>热门推荐</h2>
+                    </div>
+                    <div class="lunbo">
+                        <ul>
+                            <li class="gallery-screen">
+                                <div>
+                                    <a href="#firstimg" id="firstimg"><img src="images/bc6d42f57daa356.jpg" alt="毒液"></a>
+                                </div>
+                                <div class="gallery-detail">
+                                    <p>汤老湿主演《毒液2》重新定档</p>
+                                    <p>“汤老湿”汤姆·哈迪、米歇尔·威廉姆斯、伍迪·哈里森回归主演！2021年6月25日北美上映!</p>
+                                </div>
+                            </li>
+                            <li class="gallery-screen">
+                                <div>
+                                    <a href="#firstimg" id="firstimg"><img src="images/bc6d42f57daa356.jpg" alt="毒液"></a>
+                                </div>
+                                <div class="gallery-detail">
+                                    <p>汤老湿主演《毒液3》重新定档</p>
+                                    <p>“汤老湿”汤姆·哈迪、米歇尔·威廉姆斯、伍迪·哈里森回归主演！2021年6月25日北美上映!</p>
+                                </div>
+                            </li>
+                            <li class="gallery-screen">
+                                <div>
+                                    <a href="#firstimg" id="firstimg"><img src="images/bc6d42f57daa356.jpg" alt="毒液"></a>
+                                </div>
+                                <div class="gallery-detail">
+                                    <p>汤老湿主演《毒液4》重新定档</p>
+                                    <p>“汤老湿”汤姆·哈迪、米歇尔·威廉姆斯、伍迪·哈里森回归主演！2021年6月25日北美上映!</p>
+                                </div>
+                            </li>
+                            <li class="gallery-screen">
+                                <div>
+                                    <a href="#firstimg" id="firstimg"><img src="images/bc6d42f57daa356.jpg" alt="毒液"></a>
+                                </div>
+                                <div class="gallery-detail">
+                                    <p>汤老湿主演《毒液5》重新定档</p>
+                                    <p>“汤老湿”汤姆·哈迪、米歇尔·威廉姆斯、伍迪·哈里森回归主演！2021年6月25日北美上映!</p>
+                                </div>
+                            </li>
+                            <li class="gallery-screen">
+                                <div>
+                                    <a href="#firstimg" id="firstimg"><img src="images/bc6d42f57daa356.jpg" alt="毒液"></a>
+                                </div>
+                                <div class="gallery-detail">
+                                    <p>汤老湿主演《毒液6》重新定档</p>
+                                    <p>“汤老湿”汤姆·哈迪、米歇尔·威廉姆斯、伍迪·哈里森回归主演！2021年6月25日北美上映!</p>
+                                </div>
+                            </li>
+                            <li class="gallery-screen">
+                                <div>
+                                    <a href="#firstimg" id="firstimg"><img src="images/bc6d42f57daa356.jpg" alt="毒液"></a>
+                                </div>
+                                <div class="gallery-detail">
+                                    <p>汤老湿主演《毒液7》重新定档</p>
+                                    <p>“汤老湿”汤姆·哈迪、米歇尔·威廉姆斯、伍迪·哈里森回归主演！2021年6月25日北美上映!</p>
+                                </div>
+                            </li>
+                            <li class="gallery-screen">
+                                <div>
+                                    <a href="#firstimg" id="firstimg"><img src="images/bc6d42f57daa356.jpg" alt="毒液"></a>
+                                </div>
+                                <div class="gallery-detail">
+                                    <p>汤老湿主演《毒液8》重新定档</p>
+                                    <p>“汤老湿”汤姆·哈迪、米歇尔·威廉姆斯、伍迪·哈里森回归主演！2021年6月25日北美上映!</p>
+                                </div>
+                            </li>
+                            <li class="gallery-screen">
+                                <div>
+                                    <a href="#firstimg" id="firstimg"><img src="images/bc6d42f57daa356.jpg" alt="毒液"></a>
+                                </div>
+                                <div class="gallery-detail">
+                                    <p>汤老湿主演《毒液2》重新定档</p>
+                                    <p>“汤老湿”汤姆·哈迪、米歇尔·威廉姆斯、伍迪·哈里森回归主演！2021年6月25日北美上映!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="reviews clearfix">
+                    <div class="article-nav">
+                        <h2>最受欢迎的影评</h2>
+                        <a href="#">更多热门影评»</a>
+                        <a href="#">新片影评»</a>
+                    </div>
+                    <div class="reviews-content">
+                        <div class="reviews-item clearfix">
+                            <div class="reviews-hd">
+                                <a href="#"><img src="images/p2551320385.webp" alt="热情花招"></a>
+                            </div>
+                            <div class="reviews-bd">
+                                <h3><a href="#">对话山户结希：我想拍出一种东京森林的感觉（SIFF2019）</a></h3>
+                                <div class="reviews-bd-hd">
+                                    <a href="#">xxhhcc</a> 评论<a href="#">《热情花招》</a><span class="allstart40"></span>
+                                </div>
+                                <div class="reviews-bd-content">
+                                    “你好，我是在东京做导演的山户结希。自上次到北京以后，这次来上海是我第二次来中国，真的一直都很想来中国。读了大家通过网络在我的SNS上留言，那些从【溺水小刀】和我其他的作品感受到的东西，让我觉得哪怕文... <a href="#">(全文)</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-item">
+                            <div class="reviews-hd">
+                                <a href="#"><img src="images/p2594764469.webp" alt="你好世界"></a>
+                            </div>
+                            <div class="reviews-bd">
+                                <h3><a href="#">你创造世界拯救我，我创造世界拯救你——hello world 一张图解释最后反转</a></h3>
+                                <div class="reviews-bd-hd">
+                                    <a href="#">光影尘迹</a> 评论<a href="#">《你好世界》</a><span class="allstart50"></span>
+                                </div>
+                                <div class="reviews-bd-content">
+                                    严重剧透，慎入！！ 画了个图，解释下最后一幕的剧情。可能不是很正确，还望大佬指正。 剧情是，世界1——世界2——世界3——世界2——世界1，而世界1——世界2的剧情故事只用最后一幕表示了。个人看到的时候很吃... <a href="#">(全文)</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-item">
+                            <div class="reviews-hd">
+                                <a href="#"><img src="images/p2575161400.webp" alt="时光机"></a>
+                            </div>
+                            <div class="reviews-bd">
+                                <h3><a href="#">《时光机》把断舍离拍成电影，纳瓦彭有作者导演内味了</a></h3>
+                                <div class="reviews-bd-hd">
+                                    <a href="#">电影榨汁</a> 评论<a href="#">《时光机》</a><span class="allstart40"></span>
+                                </div>
+                                <div class="reviews-bd-content">
+                                    提起泰国影视，恐怖、青春爱情和LGBT三个类型都是真香现场。 例如《鬼影》中坐在男主脖子上的女鬼，入选豆瓣TOP 250的校园爱情片《初恋这件小事》等等，就是这几个类型的佳作代表。 类型片作为电影创作的产业化模... <a href="#">(全文)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aside">
+                <div class="answer">
+                    <p>豆瓣电影评分八问</p>
+                </div>
+                <div class="billboard">
+                    <div class="billboard-hd clearfix">
+                        <h2>一周口碑榜<a href="#">更多榜单»</a></a></h2>
+                    </div>
+                    <div class="billboard-bd">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td class="title"><a href="#">7号房的礼物(土耳其版)</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="order">2</td>
+                                    <td class="title"><a href="#">悲惨世界</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="order">3</td>
+                                    <td class="title"><a href="#">再见，妈妈</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="order">4</td>
+                                    <td class="title"><a href="#">摩登家庭：摩登式告别</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="order">5</td>
+                                    <td class="title"><a href="#">被涂污的鸟</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="order">6</td>
+                                    <td class="title"><a href="#">必是天堂</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="order">7</td>
+                                    <td class="title"><a href="#">要强的人</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="order">8</td>
+                                    <td class="title"><a href="#">从不，很少，有时，总是</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="order">9</td>
+                                    <td class="title"><a href="#">你好世界</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="order">10</td>
+                                    <td class="title"><a href="#">忙人日记</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="doulist">
+                    <h2>热门豆列</h2>
+                    <ul>
+                        <li>
+                            <span>8推荐</span>
+                            <div><a href="#">当我没工作时我在做什么②(英剧)</a></div>
+                        </li>
+                        <li>
+                            <span>3462推荐</span>
+                            <div><a href="#">179部经典港片</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="contact">
+                    <h2>合作联系</h2>
+                    <div>
+                        <ul>
+                            <li>电影合作邮箱：<img src="images/email_movie.png" alt="电影合作邮箱："></li>
+                            <li>电视剧合作邮箱：<img src="images/email_tv.png" alt="电视剧合作邮箱："></li>
+                            <li>豆瓣影人PRO合作邮箱：<img src="images/email_pro.png" alt="豆瓣影人PRO合作邮箱："></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="contact-mod">
+                    <h2>关注我们</h2>
+                    <div class="mod-box">
+                        <div><a href="#"><img src="images/home_weibo.png" alt="微博"></a>
+                            <a href="#">微博</a></div>
+                        <div><a href="#"><img src="images/home_weixin.png" alt="微信"></a>
+                            <a href="#">微信</a></div>
+                        <div><a href="#"><img src="images/bite_me@2x.jpg" alt="瓣嘴"></a>
+                            <a href="#">瓣嘴</a></div>
+                        <div><a href="#"><img src="images/home_film_pro@2x.jpg" alt="豆瓣影人PRO"></a>
+                            <a href="#">豆瓣影人PRO</a></div>
+                        <div><a href="#"><img src="images/home_club@2x.jpg" alt="观影club"></a>
+                            <a href="#">观影club</a></div>
+                    </div>
+                </div>
+                <div class="ad-board">
+                    <div class="ad-box">
+                        <div>
+                            <a href="#"><img src="images/666b5143fe230db.jpg" alt="广告"></a>
+                        </div>
+                        <div>
+                            <p>世界读书日电子书大促 | 全场0.99起</p>
+                            <p>豆瓣阅读</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <span id="icp">
+                © 2005－2020 douban.com, all rights reserved 北京豆网科技有限公司
+            </span>
+            <span class="fight">
+                <a href="#">关于豆瓣</a>
+                · 
+                <a href="#">在豆瓣工作</a>
+                · 
+                <a href="#">联系我们</a>
+                · 
+                <a href="#">法律声明</a>
+                · 
+                <a href="#">帮助中心</a>
+                · 
+                <a href="#">移动应用</a>
+                · 
+                <a href="#">豆瓣广告</a>
+            </span>
+        </div>
+    </div>
+  
+</body>
+</html>
